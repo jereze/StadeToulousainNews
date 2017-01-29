@@ -8,7 +8,7 @@ function fetchArticles(callback) {
     return callback(articlesData);
   }
   console.log("Fetching json");
-  $.getJSON("http://dtk.jereze.com/api/news.min.json").done(function(data) {
+  $.getJSON("http://dtk.jereze.com/news.min.json").done(function(data) {
     articlesData = data;
     return callback(articlesData);
   }).fail(function() {
